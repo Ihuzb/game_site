@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>御龙在天手游官方网站-腾讯第一国战手游-腾讯游戏</title>
+    <!--胡智彬-->
+    <link href="css/hztese.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/hztese.js"></script>
+    <script src="js/hzguding.js"></script>
+    <script src="js/hzguojia.js"></script>
+    <script src="js/hzjineng.js"></script>
+    <!--陈磊-->
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/index.js"></script>
+    <!--张世康-->
+    <link rel="icon" href="favicon.ico"/>
+    <style>
+        #media11 {
+            background-color: #EAE7E2;
+            height: 230px;
+            position: relative;
+        }
+
+        #media1 {
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 980px;
+            height: 200px;
+            /*top: 40px;*/
+            /*position: relative;*/
+            /*position: absolute;*/
+        }
+
+        #media1 ul {
+            width: 1100px;
+            top: 40px;
+            height: 60px;
+            /*position: relative;*/
+            position: absolute;
+        }
+
+        #media1 li {
+            width: 110px;
+            height: 40px;
+            list-style: none;
+            float: left;
+            margin-right: 16px;
+            margin-bottom: 20px;
+        }
+
+        #public-board11 {
+
+            background-color: #685C4A;
+            height: 50px;
+        }
+
+        #public-board-ban {
+            margin: 0 auto;
+            /*padding: 0 auto;*/
+
+            width: 980px;
+            height: 50px;
+            position: relative;
+        }
+
+        #public-board-ban ul {
+            list-style: none;
+            height: 20px;
+            line-height: 20px;
+            width: 1164px;
+            position: absolute;
+        }
+
+        #public-board-ban li {
+            float: left;
+            color: #9F9C7C;
+            font-size: 16px;
+            padding-right: 12px;
+            line-height: 50px;
+        }
+
+        #public-board-ban .strong {
+            font-weight: bold;
+            color: white;
+        }
+
+        #ending {
+            background-color: #000000;
+            height: 120px;
+        }
+
+        #end {
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 980px;
+            height: 120px;
+            position: relative;
+        }
+
+        #end .end-left {
+            float: left;
+            height: 120px;
+            width: 269px;
+            position: relative;
+        }
+
+        #end .end-left i {
+            float: left;
+            width: 269px;
+            height: 60px;
+            padding-left: 30px;
+            margin-top: 32px;
+        }
+
+        #end .end-right {
+            float: left;
+            display: block;
+            width: 710px;
+
+        }
+
+        #end .end-right ul {
+            margin-top: 32px;
+            float: left;
+            display: block;
+            list-style: none;
+            width: 672px;
+            position: absolute;
+        }
+
+        #end .end-right li {
+            float: left;
+            padding-top: 5px;
+        }
+
+        #end .end-right li a {
+            color: #4A4A4A;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        #end .end-right {
+            color: #4A4A4A;
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 75px;
+            width: 600px;
+            height: 64px;
+        }
+
+        #end .e-right {
+            float: right;
+            margin-left: 102px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(".guojia #wu-button li").click(function () {
+                var idx = $(this).index();
+                var imgwidth = $(".guojia_banner").width();
+                var target = -end * imgwidth;
+                $("#guojia-list").stop().animate({
+                    "left": target + "px"
+                }, 1000);
+            });
+        });
+
+        $(function () {
+            //1. 给所有li注册mouseenter事件
+            $("#media1>ul>li").mouseenter(function () {
+                //2. 当前li opcity=1 其他的等于0.4
+                $(this).css("opacity", "1").siblings().css("opacity", "0.4");
+            });
+
+            //3. 离开盒子的时候，所有的li的opacity都改成1
+            $("#media1").mouseleave(function () {
+                $(this).find("li").css("opacity", "1");
+            });
+        });
+
+
+        $(function () {
+            $(" #end ul li  a").mouseenter(function () {
+                $(this).css("color", "white")
+            })
+            $(" #end ul li  a").mouseleave(function () {
+                $(this).css("color", "#4A4A4A")
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<embed src="images/1.mp3" type="" class="music"/>
+<!--头部白色导航栏-->
+<div class="top_white clearfix">
+    <div class="box">
+        <ul class="txul">
+            <li class="txli1">
+                <a href="#">
+                </a>
+            </li>
+            <li class="txli2">
+                <img src="images/index_images/top_bigbanner.jpg" alt=""/>
+            </li>
+            <li class="txli3">
+                <h3>腾讯游戏排行榜</h3>
+                <span class="xl"></span>
+
+                <div class="ranking_list">
+                    <!--1 -->
+                    <div class="rank_game">
+                        <div class="rank_game_top">
+                            <h2>新游排行榜</h2>
+                            <a href="#">更多》 </a>
+                        </div>
+                        <div class="rank_game_bom">
+                            <ul>
+                                <li>
+                                    <span class="rank_bom_s1">排行 游戏</span>
+                                    <!--<span>游戏</span>-->
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">1</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">刀锋铁骑</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/t7-2.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">2</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">神之浩劫</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/12.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">3</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">战争雷霆</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/13.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">4</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">冒险岛2</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/13.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">5</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">冒险者大冒险</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/15.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">6</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">王牌对决</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/16.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">7</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">全职大师</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/17.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">8</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">兽人必须死</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/18.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">9</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">欢乐坦克</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/19.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">10</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">生死狙击OL</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/110.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="rank_game">
+                        <div class="rank_game_top">
+                            <h2>热门排行榜</h2>
+                            <a href="#">更多》 </a>
+                        </div>
+                        <div class="rank_game_bom">
+                            <ul>
+                                <li>
+                                    <span class="rank_bom_s1">排行 游戏</span>
+                                    <!--<span>游戏</span>-->
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">1</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">英雄联盟</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/21.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">2</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">地下城与勇士</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/22.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">3</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">穿越火线</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/23.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">4</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">QQ炫舞</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/24.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">5</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">FIFA Onlione3</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/25.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">6</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">逆战</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/26.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">7</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">天涯明月刀</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/27.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">8</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">QQ飞车</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/28.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">9</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">英雄之刃</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/29.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">10</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">捕鱼达人3D</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/210.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="rank_game">
+                        <div class="rank_game_top">
+                            <h2>热门手游排行榜</h2>
+                            <a href="#">更多》 </a>
+                        </div>
+                        <div class="rank_game_bom">
+                            <ul>
+                                <li>
+                                    <span class="rank_bom_s1">排行 游戏</span>
+                                    <!--<span>游戏</span>-->
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">1</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">御龙在天手游</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/31.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">2</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">皇室战争</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/32.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">3</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">保卫萝卜3</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/33.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">4</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">欢乐拼三张</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/34.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">5</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">仙剑情缘</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/35.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">6</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">王者荣耀</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/36.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">7</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">穿越火线</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/37.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">8</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">天天酷跑</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/38.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">9</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">欢乐斗地主</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/39.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rank_bom_li1">
+                                    <span class="rank_bom_color">10</span>
+
+                                    <div class="rank_bom_div1">
+                                        <a href="">火隐忍者</a>
+
+                                        <div class="rank_bom_div2">
+                                            <img src="images/game/310.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--官网头部-->
+<div class="top clearfix">
+    <div class="box">
+        <!--导航列表-->
+        <ul class="clearfix list">
+            <li class="li1">
+                <a href="#">官网首页
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="li2">
+                <a href="#">游戏公告
+                    <span>NEWS</span>
+                </a>
+            </li>
+            <li class="li3">
+                <a href="#">活动专区
+                    <span>ACTIVITY</span>
+                </a>
+            </li>
+            <li class="li4">
+                <a href="web/newPlayer.html" target="_blank">新兵注册
+                    <span>GUIDE</span>
+                </a>
+            </li>
+            <li class="li5">
+                <a href="#">游戏视频
+                    <span>RAIDERS</span>
+                </a>
+            </li>
+            <li class="li6">
+                <a href="#">游戏图库
+                    <span>VIDEOS</span>
+                </a>
+            </li>
+            <li class="li7">
+                <a href="web/bbs.html" target="_blank">游戏论坛
+                    <span>BBS</span>
+                </a>
+            </li>
+            <li class="li8">
+                <a href="web/CDGEY.html" target="_blank">礼包兑换
+                    <span>GIFTS</span>
+                </a>
+            </li>
+        </ul>
+        <!--LOGO链接-->
+        <a href="#" class="LOGO"></a>
+        <!--视频播放-->
+        <div class="media" id="media">
+            <div class="dj"></div>
+            <div class="bf">
+                <embed src="images/mingjiang.mp4" autostart="true" width="550" height="300">
+                    <span></span>
+            </div>
+
+        </div>
+        <!--二维码-->
+        <div class="erweima" id="erweima">
+            <ul class="ewm-list">
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <!--首页导航轮播图-->
+        <div id="dhlb" class="dhlb">
+            <ul id="photo" class="photo">
+                <li><img src="images/index_images/banner1.1.jpg" alt=""/></li>
+                <li><img src="images/index_images/banner1.jpg" alt=""/></li>
+                <li><img src="images/index_images/banner2.jpg" alt=""/></li>
+                <li><img src="images/index_images/banner3.jpg" s alt=""/></li>
+                <li><img src="images/index_images/banner4.jpg" alt=""/></li>
+            </ul>
+            <!--列表-->
+            <ul id="lblist" class="lblist">
+                <li class="on">国战那些事</li>
+                <li>拿新手礼包 战场见</li>
+                <li>官网礼包领取中心</li>
+                <li>删档充值1.5倍返还中</li>
+                <li>内测玩家不删档返还</li>
+
+            </ul>
+            <div class="list_span">
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!--游戏资讯-->
+<div class="new_game">
+    <div class="box">
+        <!--新手指导-->
+        <div class="new_left">
+            <div class="guide"></div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>职业选择</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>国家选择</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>实战御龙</span>
+                            <i></i>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>立体社交</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>战力提升</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>经济系统</span>
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--活动中心-->
+        <div class="new_right">
+            <!--标题-->
+            <div class="guide"></div>
+            <!--活动栏-->
+            <div class="activity">
+                <!--Tab栏-->
+                <div class="Tab_new">
+                    <ul>
+                        <li class="tn_li on">最新</li>
+                        <li class="tn_li">新闻</li>
+                        <li class="tn_li">公告</li>
+                        <li class="tn_li">活动</li>
+                        <li class="tn_li">攻略</li>
+                    </ul>
+                    <a href="#" class="tn_a"></a>
+                </div>
+                <!--新闻栏-->
+                <div class="Tab_new_Blist">
+                    <!--最新-->
+                    <div class="Tab_new_list Tab_new_gl">
+                        <ul>
+                            <li class="li_one">
+                                再掀风云我为王，抢王夺万金
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">激情国战吼出来，指挥就送五十块</span>
+                                </a>
+                                <span class="fr">2016-08-13</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">新服预告（8月30-31日）</span>
+                                </a>
+                                <span class="fr">2016-08-12</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">【有奖讨论——国战还能这么玩！】奖励发放公告</span>
+                                </a>
+                                <span class="fr">2016-08-25</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">抢王夺68800金子 获奖名单公布</span>
+                                </a>
+                                <span class="fr">2016-08-16</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">御龙在天手游-禁止iOS第三方代充公告</span>
+                                </a>
+                                <span class="fr">2016-08-16</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">再掀风云我为王，抢王送68800金</span>
+                                </a>
+                                <span class="fr">2016-08-13</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--新闻-->
+                    <div class="Tab_new_list">
+                        <ul>
+                            <li class="li_one">
+                                抢王夺68800金子 获奖名单公布
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">《御龙在天手游》联手蓝翔富士康 实地直播送福利</span>
+                                </a>
+                                <span class="fr">2016-08-19</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">免流量国战，更有大礼等你抽</span>
+                                </a>
+                                <span class="fr">2016-08-16</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">《御龙在天手游》战争学院招募公告</span>
+                                </a>
+                                <span class="fr">2016-08-12</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">8月11日《御龙在天手游》iOS不删档开启公告</span>
+                                </a>
+                                <span class="fr">2016-08-10</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">[^_^萌到哭]小双表情微信首发</span>
+                                </a>
+                                <span class="fr">2016-07-22</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新闻</span>
+                                    <span class="link_tit">《御龙在天手游》官方论坛火爆来袭！</span>
+                                </a>
+                                <span class="fr">2016-07-07</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--公告-->
+                    <div class="Tab_new_list">
+                        <ul>
+                            <li class="li_one">
+                                再掀风云我为王，抢王夺万金
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">激情国战吼出来，指挥就送五十块</span>
+                                </a>
+                                <span class="fr">2016-08-13</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">新服预告（8月30-31日）</span>
+                                </a>
+                                <span class="fr">2016-08-12</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">【有奖讨论——国战还能这么玩！】奖励发放公告</span>
+                                </a>
+                                <span class="fr">2016-08-25</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">御龙在天手游-禁止iOS第三方代充公告</span>
+                                </a>
+                                <span class="fr">2016-08-16</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">再掀风云我为王，抢王送68800金</span>
+                                </a>
+                                <span class="fr">2016-08-13</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">公告</span>
+                                    <span class="link_tit">温馨提示:每周热点(8月30日更新)</span>
+                                </a>
+                                <span class="fr">2016-08-10</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--活动-->
+                    <div class="Tab_new_list">
+                        <ul>
+                            <li class="li_one">
+                                全民大赛震撼开启，千万奖励甄选群英战神、最强指挥！
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">活动</span>
+                                    <span class="link_tit">端游玩家回馈--亿万金券豪礼大派送</span>
+                                </a>
+                                <span class="fr">2016-08-11</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">活动</span>
+                                    <span class="link_tit">加入公会 一起分金银</span>
+                                </a>
+                                <span class="fr">2016-08-11</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">活动</span>
+                                    <span class="link_tit">《御龙在天手游》内测用户不删档，返还大礼领取说明</span>
+                                </a>
+                                <span class="fr">2016-08-09</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">活动</span>
+                                    <span class="link_tit">《御龙在天手游》删档1.5倍返还计划 金子返还领取说明</span>
+                                </a>
+                                <span class="fr">2016-08-09</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">活动</span>
+                                    <span class="link_tit">《御龙在天手游》官网礼包领取中心</span>
+                                </a>
+                                <span class="fr">2016-08-09</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">活动</span>
+                                    <span class="link_tit">红包免费送，预约得豪礼</span>
+                                </a>
+                                <span class="fr">2016-07-08</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--攻略-->
+                    <div class="Tab_new_list">
+                        <ul>
+                            <li class="li_one">
+                                御龙在天手游之太师官权解析
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">玩法</span>
+                                    <span class="link_tit">场景介绍--阳平荒野篇</span>
+                                </a>
+                                <span class="fr">2016-08-30</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新手</span>
+                                    <span class="link_tit">家族面板解析（下）</span>
+                                </a>
+                                <span class="fr">2016-08-30</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新手</span>
+                                    <span class="link_tit">走进《御龙在天手游》组队系统</span>
+                                </a>
+                                <span class="fr">2016-08-30</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">玩法</span>
+                                    <span class="link_tit">家族面板解析（上）</span>
+                                </a>
+                                <span class="fr">2016-08-30</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">娱乐</span>
+                                    <span class="link_tit">御龙三国表情包</span>
+                                </a>
+                                <span class="fr">2016-08-30</span>
+                            </li>
+                            <li>
+                                <a href="#" class="Tnl_a">
+                                    <span class="type">新手</span>
+                                    <span class="link_tit">《御龙在天手游》启动特权详解</span>
+                                </a>
+                                <span class="fr">2016-08-26</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--胡智彬-->
+<div class="guding" id="gu">
+    <div class="ding1">官网首页</div>
+    <div class="ding1">游戏资讯</div>
+    <div class="ding1">游戏特色</div>
+    <div class="ding1">职业介绍</div>
+    <div class="ding1">大国风范</div>
+    <div class="ding2">返回顶部</div>
+    <div class="ding3">
+        <div class="ding4"></div>
+        <div class="ding5"></div>
+    </div>
+</div>
+<div class="tese" id="box">
+    <!--顶部标题-->
+    <div class="tou"></div>
+    <!--底部菱形-->
+    <div class="anniu" id="lingxing">
+        <ul class="wei">
+
+        </ul>
+    </div>
+    <!--左右箭头-->
+    <div style="display: none" class="arr" id="arr">
+        <div class="left" id="left"></div>
+        <div class="right" id="right"></div>
+    </div>
+    <!--图片轮播-->
+    <ul>
+        <li><img src="images/index_images/cont_03.jpg" width="1366px"></li>
+        <li><img src="images/index_images/cont_bg01.jpg" width="1366px"></li>
+        <li><img src="images/index_images/cont_bg02.jpg" width="1366px"></li>
+        <li><img src="images/index_images/cont_bg04.jpg" width="1366px"></li>
+        <li><img src="images/index_images/cont_bg05.jpg" width="1366px"></li>
+    </ul>
+</div>
+<div id="zhiye">
+    <!--职业名称-->
+    <div class="zy">
+        <ul class="xuanze">
+            <li class="one one0"></li>
+            <li class="one"></li>
+            <li class="one"></li>
+            <li class="one"></li>
+        </ul>
+    </div>
+    <!--装饰线-->
+    <div class="xian1"></div>
+    <div class="xian2"></div>
+    <div style="top: 275px;" class="xian2"></div>
+    <div style="top: 390px;" class="xian2"></div>
+    <div style="top: 505px;height: 100px" class="xian1"></div>
+    <!--左右箭头-->
+    <div style="margin-top: -60px;" class="arr" id="arr1">
+        <div class="left" id="left1"></div>
+        <div class="right" id="right1"></div>
+    </div>
+    <!--职业介绍图片-->
+    <ul id="imagee">
+        <li><img src="images/index_images/yushan.jpg" height="860px"></li>
+        <li style="display: none"><img src="images/index_images/shengong.jpg" height="860px"></li>
+        <li style="display: none"><img src="images/index_images/zhongjian.jpg" height="860px"></li>
+        <li style="display: none"><img src="images/index_images/badao.jpg" height="860px"></li>
+    </ul>
+    <div class="foot">
+        <div class="foot-one">
+            <div class="foot-left"></div>
+            <div class="jianjie">
+                <div style="display: block" class="shen-one">远战法术系，拥有多种控制技能，其致盲技能使得对手能在短时间内摸不着南北从而出奇制胜，以诸葛亮为原型<br>
+                    的武器职业设计，是国战中的关键角色，试想能让敌人不能输出攻击任其鱼肉，是多么大快人心的事情。
+                </div>
+                <div class="yu-one">远战物理系，远距离攻击，其连射及蓄力攻击伴随的高暴击伤害输出能在国战中给敌人们最沉重的打击，其急退<br>技能在千军万马中从容撤退以黄忠为原型的武器职业设计
+                    能让玩家在最大程度上享受国战破敌千万的快感
+                </div>
+                <div class="zhong-one">近战法术系，高重击的伤害，拥有近战职业中最远的中距离作战范围在最短的时间内给予敌人造成大量的伤害<br>以魏延为原型的武器职业设计，属于勇武型的刺客一旦锁定目标，必定取敌首级
+                </div>
+                <div class="ba-one">近战物理系，拥有极高的攻击，是群体作战必不可少的输出来源以关羽为原型的武器职业设计属于冲锋陷阵型。<br>不俗的防御及血量能在一对一的抗衡中笑到最后
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="foot1">
+        <div class="foot1-one">
+            <div class="foot1-left"></div>
+            <div class="shen1-one" id="jineng">
+                <div id="yushan" style="display: block">
+                    <div class="shen1-ji ">
+                        <ul>
+                            <li class="shenji shenji0"></li>
+                            <li class="shenji"></li>
+                            <li class="shenji"></li>
+                            <li class="shenji"></li>
+                            <li class="shenji"></li>
+                            <li class="shenji"></li>
+                        </ul>
+                    </div>
+                    <div class="shen1-jitext shen1">
+                        <ul>
+                            <li style="display: block"><span class="span-l">瞭若观火</span>
+                    <span class="span-r">羽扇轻挥，唤三昧真火，狂风烈焰<br>
+对前方多个单位造成法术攻击，额外附加法术伤害</span></li>
+                            <li><span class="span-l">风卷残云</span>
+                    <span class="span-r">羽扇轻卷，龙起风涌，无所遁逃<br>
+对目标四周单位造成减速效果，持续一定时间，造成一定的法术攻击，额外附加一定的法术伤害</span></li>
+                            <li><span class="span-l">流水落花</span>
+                    <span class="span-r">羽扇轻翻，周天寒彻，万物僵枯<br>
+对目标四周单位造成多段伤害，每秒造成一定的法术攻击，额外附加一定的法术伤害</span></li>
+                            <li><span class="span-l">水淹七军</span>
+                    <span class="span-r">羽扇轻召，寒气袭人，召唤一场冰雨<br>
+对周围单位持续造成一定的法术攻击，额外附加一定的法术伤害，每次都有一定的几率使敌方冰冻一定时间</span></li>
+                            <li><span class="span-l">法不容情</span>
+                    <span class="span-r">羽扇轻摇，炽光如炬，对前方射出一条光棱<br>
+对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害，并致盲敌方，降低敌方一定的命中率，持续一定时间</span></li>
+                            <li><span class="span-l">天外飞仙</span>
+                    <span class="span-r">羽扇轻舞，凤凰振翅，焚祭星辰<br>
+对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="shengong">
+                    <div class="yu1-ji">
+                        <ul>
+                            <li class="yuji yuji0"></li>
+                            <li class="yuji"></li>
+                            <li class="yuji"></li>
+                            <li class="yuji"></li>
+                            <li class="yuji"></li>
+                            <li class="yuji"></li>
+                        </ul>
+                    </div>
+                    <div class="yu1-jitext shen1">
+                        <ul>
+                            <li style="display: block">
+                                <span class="span-l">星空箭</span>
+                                <span class="span-r">对目标方向同时发出数支箭矢<br>对范围内目标造成一定的物理攻击,额外附加一定的物理伤害</span></li>
+                            <li>
+                                <span class="span-l">百步穿杨</span>
+                                <span class="span-r">蓄力射出强力一箭，自身受到后坐力，后退一段距离<br>使沿途范围内的敌人减速，持续一定时间，并造成一定的物理攻击,额外附加一定的物理伤害</span>
+                            </li>
+                            <li>
+                                <span class="span-l">风激电飞</span>
+                                <span class="span-r">持续向前方扇形区域扫射出大量箭矢<br>对范围内单位造成多段伤害，每秒造成一定的物理攻击，额外附加一定的物理伤害</span>
+                            </li>
+                            <li>
+                                <span class="span-l">毒气陷阱</span>
+                                <span class="span-r">羽扇轻召，寒气袭人，召唤一场冰雨<br>对周围单位持续造成一定的法术攻击，额外附加一定的法术伤害，每次都有一定的几率使敌方冰冻一定时间</span>
+                            </li>
+                            <li>
+                                <span class="span-l">射手之魂</span>
+                                <span class="span-r">羽扇轻摇，炽光如炬，对前方射出一条光棱<br>对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害，并致盲敌方，降低敌方一定的命中率，持续一定时间</span>
+                            </li>
+                            <li>
+                                <span class="span-l">乱星坠弯</span>
+                                <span class="span-r">羽扇轻舞，凤凰振翅，焚祭星辰<br>对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="zhongjian">
+                    <div class="zhong1-ji">
+                        <ul>
+                            <li class="zhongji zhongji0"></li>
+                            <li class="zhongji"></li>
+                            <li class="zhongji"></li>
+                            <li class="zhongji"></li>
+                            <li class="zhongji"></li>
+                            <li class="zhongji"></li>
+                        </ul>
+                    </div>
+                    <div class="zhong1-jitext shen1">
+                        <ul>
+                            <li style="display: block">
+                                <span class="span-l">星空箭</span>
+                                <span class="span-r">对目标方向同时发出数支箭矢<br>对范围内目标造成一定的物理攻击,额外附加一定的物理伤害</span></li>
+                            <li>
+                                <span class="span-l">百步穿杨</span>
+                                <span class="span-r">蓄力射出强力一箭，自身受到后坐力，后退一段距离<br>使沿途范围内的敌人减速，持续一定时间，并造成一定的物理攻击,额外附加一定的物理伤害</span>
+                            </li>
+                            <li>
+                                <span class="span-l">风激电飞</span>
+                                <span class="span-r">持续向前方扇形区域扫射出大量箭矢<br>对范围内单位造成多段伤害，每秒造成一定的物理攻击，额外附加一定的物理伤害</span>
+                            </li>
+                            <li>
+                                <span class="span-l">毒气陷阱</span>
+                                <span class="span-r">羽扇轻召，寒气袭人，召唤一场冰雨<br>对周围单位持续造成一定的法术攻击，额外附加一定的法术伤害，每次都有一定的几率使敌方冰冻一定时间</span>
+                            </li>
+                            <li>
+                                <span class="span-l">射手之魂</span>
+                                <span class="span-r">羽扇轻摇，炽光如炬，对前方射出一条光棱<br>对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害，并致盲敌方，降低敌方一定的命中率，持续一定时间</span>
+                            </li>
+                            <li>
+                                <span class="span-l">乱星坠弯</span>
+                                <span class="span-r">羽扇轻舞，凤凰振翅，焚祭星辰<br>对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="badao">
+                    <div class="ba1-ji">
+                        <ul>
+                            <li class="ba ba0"></li>
+                            <li class="ba"></li>
+                            <li class="ba"></li>
+                            <li class="ba"></li>
+                            <li class="ba"></li>
+                            <li class="ba"></li>
+                        </ul>
+                    </div>
+                    <div class="ba1-jitext shen1">
+                        <ul>
+                            <li style="display: block">
+                                <span class="span-l">星空箭</span>
+                                <span class="span-r">对目标方向同时发出数支箭矢<br>对范围内目标造成一定的物理攻击,额外附加一定的物理伤害</span></li>
+                            <li>
+                                <span class="span-l">百步穿杨</span>
+                                <span class="span-r">蓄力射出强力一箭，自身受到后坐力，后退一段距离<br>使沿途范围内的敌人减速，持续一定时间，并造成一定的物理攻击,额外附加一定的物理伤害</span>
+                            </li>
+                            <li>
+                                <span class="span-l">风激电飞</span>
+                                <span class="span-r">持续向前方扇形区域扫射出大量箭矢<br>对范围内单位造成多段伤害，每秒造成一定的物理攻击，额外附加一定的物理伤害</span>
+                            </li>
+                            <li>
+                                <span class="span-l">毒气陷阱</span>
+                                <span class="span-r">羽扇轻召，寒气袭人，召唤一场冰雨<br>对周围单位持续造成一定的法术攻击，额外附加一定的法术伤害，每次都有一定的几率使敌方冰冻一定时间</span>
+                            </li>
+                            <li>
+                                <span class="span-l">射手之魂</span>
+                                <span class="span-r">羽扇轻摇，炽光如炬，对前方射出一条光棱<br>对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害，并致盲敌方，降低敌方一定的命中率，持续一定时间</span>
+                            </li>
+                            <li>
+                                <span class="span-l">乱星坠弯</span>
+                                <span class="span-r">羽扇轻舞，凤凰振翅，焚祭星辰<br>对前方多个单位造成一定的法术攻击，额外附加一定的法术伤害</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="guojia" class="guojia">
+    <div class="guoming">
+        <div class="xian3"></div>
+        <div class="ming">
+            <ul>
+                <li class="two two0"></li>
+                <li class="two"></li>
+                <li class="two"></li>
+                <li class="two"></li>
+                <li class="two" style="margin-right: 0px"></li>
+            </ul>
+        </div>
+        <div class="xian4"></div>
+    </div>
+    <div class="guofoot">
+        <div id="yang" style="display: block" class="guowai">
+            <div class="guo-left"></div>
+            <div class="guo-you">
+                <div class="div1">霸气磅礴</div>
+                <div class="div2"></div>
+                <div class="div3">这里曾上演过5万场惊心动魄的国战，塑造过霸气磅礴的1400万国力。<br>我们不乏英雄豪杰，霸气从不解释！</div>
+            </div>
+        </div>
+        <div id="yu" class="guowai">
+            <div style="background-position: -600px -401px" class="guo-left"></div>
+            <div class="guo-you">
+                <div class="div1">狂野之心</div>
+                <div class="div2"></div>
+                <div class="div3">逐鹿中原，欲得天下！九鼎不归一，不决我们狂野之心。<br>用智慧和野心，踏上征服之路！</div>
+            </div>
+        </div>
+        <div id="jing" class="guowai">
+            <div style="background-position: -929px -284px" class="guo-left"></div>
+            <div class="guo-you">
+                <div class="div1">一往无前</div>
+                <div class="div2"></div>
+                <div class="div3">在这里，将士们一旦确定方向，定会毫不迟疑，一路披荆向前。<br>我们不乏英雄豪杰，霸气从不解释！</div>
+            </div>
+        </div>
+        <div id="yi" class="guowai">
+            <div style="background-position: -929px -352px" class="guo-left"></div>
+            <div class="guo-you">
+                <div class="div1">傲然不屈</div>
+                <div class="div2"></div>
+                <div class="div3">这里曾诞生过第一个18星，将士们誓死捍卫到底，就算只剩下自己。<br>也会坚定决心，勇做孤胆英雄，单挑八国联军！</div>
+            </div>
+        </div>
+        <div id="qing" class="guowai">
+            <div style="background-position: -929px -425px" class="guo-left"></div>
+            <div class="guo-you">
+                <div class="div1">智取江山</div>
+                <div class="div2"></div>
+                <div class="div3">这片土地，代表一种智慧，代表你胸怀远大、怀揣梦想。<br>九州再乱，也能智取江山，一切皆在运筹帷幄中，方可决胜千里之外！</div>
+            </div>
+        </div>
+    </div>
+    <div class="guotu">
+        <div class="tu-xiu">
+            <ul>
+                <li><img src="images/index_images/yangzhou.jpg" height="955px"></li>
+                <li style="display: none"><img src="images/index_images/yuzhou.jpg" height="955px"></li>
+                <li><img src="images/index_images/jingzhou.jpg" height="955px"></li>
+                <li><img src="images/index_images/yizhou.jpg" height="955px"></li>
+                <li><img src="images/index_images/qingzhou.jpg" height="955px"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--张世康-->
+<!--图片栏-->
+<div id="media11">
+    <div id="media1">
+        <ul>
+            <li><a href="javascript:;"><img src="index_images/media01.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media02.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media03.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media04.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media05.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media06.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media07.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media08.png" alt=""/></a></li>
+            <!--</ul>-->
+            <!--<ul >-->
+            <li><a href="javascript:;"><img src="index_images/media09.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media10.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media11.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media12.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media13.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media14.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media15.png" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="index_images/media16.png" alt=""/></a></li>
+        </ul>
+    </div>
+</div>
+<!--公告栏-->
+<div id="public-board11">
+    <div id="public-board-ban">
+        <ul>
+            <li class="strong">健康游戏公告:</li>
+            <li>抵制不良游戏</li>
+            <li>拒绝盗版游戏</li>
+            <li>注意自我保护</li>
+            <li>谨防受骗上当</li>
+            <li>适度游戏益脑</li>
+            <li>沉迷游戏伤身</li>
+            <li>合理安排时间</li>
+            <li>享受健康生活</li>
+        </ul>
+    </div>
+</div>
+<!--结尾-->
+<div id="ending">
+    <div id="end">
+        <div class="end-left"><i>
+            <img src="index_images/timi.jpg" alt=""/>
+        </i></div>
+        <div class="end-right">
+            <ul>
+                <li>
+                    <a href="javascript:;" target="_blank">腾讯互动娱乐</a>|
+                    <a href="javascript:;" target="_blank">服务条款</a>|
+                    <a href="javascript:;" target="_blank">广告服务</a>|
+                    <a href="javascript:;" target="_blank">腾讯游戏招聘</a>|
+                    <a href="javascript:;" target="_blank">腾讯游戏客服</a>|
+                    <a href="javascript:;" target="_blank">游戏活动</a>|
+                    <a href="javascript:;" target="_blank">游戏地图</a>|
+                    <a href="javascript:;" target="_blank">商务合作</a>|
+                    <a href="javascript:;" target="_blank">腾讯网</a>|
+                    <a href="javascript:;" target="_blank">网站导航</a>
+                </li>
+                <li>COPYRIGHT &copy; 1998 - 2016 TENCENT. ALL RIGHTS RESERVED.</li>
+                <li class="e-right">
+                    <a href="javascript:;" target="_blank">腾讯公司版权所有</a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank">
+                        <img width="13" height="15"
+                             style="margin-right: 3px; vertical-align: middle; display: inline !important;"
+                             src="index_images/icplogo.png">文网游备字〔2016〕Ｍ-RPG 1116 号</a>|
+                    <a href="javascript:;" target="_blank">粤网文[2014]0633-233号</a>|
+                    <a href="javascript:;" target="_blank">新出网证（粤）字010号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

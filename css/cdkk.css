@@ -1,0 +1,323 @@
+@charset "UTF-8";
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li{
+    margin: 0;
+    padding: 0;
+    list-style:none ;
+    font-family: "宋体";
+    color: #333333;
+}
+
+
+
+     /*外层大框*/
+.cdk-box {
+    width: 660px;
+    height: 740px;
+    position: relative;
+    left: 205px;
+    top: 336px;
+
+}
+.cdk-pt{
+    font-size: 15px;
+    color:  #3D2C25;
+    position: absolute;
+    left: 360px;
+    top: 260px;
+}
+#inputShou{
+    cursor: pointer;
+}
+#inputWei{
+    cursor: pointer;
+}
+/*select公共类*/
+.cdk-box .public {
+    height: 38px;
+    width: 660px;
+    margin-top: 10px;
+    line-height: 38px;
+}
+/*select样式*/
+.cdk-box select{
+    position: absolute;
+    left: 200px;
+    font-family: 黑体;
+    width: 288px;
+    height: 36px;
+    background-color: #3D2C25;
+    color: #7F604C;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid #55423B;
+}
+/*两个不同输入框*/
+.cdk-box input{
+    position: absolute;
+    left: 200px;
+}
+/*框前span字体样式*/
+.cdk-box span{
+    position: absolute;
+    right: 457px;
+    font-family: 微软雅黑;
+    cursor: pointer;
+    color: white;
+}
+/*顶部框margin-top值*/
+.cdk-box .cdk-qudao {
+    margin-top: 47px;
+}
+/*验证码图片框*/
+.cdk-box .cdk-yazhengma-tu {
+    width: 130px;
+    height: 53px;
+    position: absolute;
+    left: 200px;
+}
+/*验证码图片框后文字*/
+.cdk-box .yazhengma-tu-a {
+    position: absolute;
+    left: 332px;
+    width: 200px;
+    height: 20px;
+    cursor: pointer;
+    color: white;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+/*cdk框样式*/
+.cdk-box .cdk-inp1 {
+    width: 278px;
+    height: 36px;
+    background-color: #3D2C25;
+    outline-style: none;
+    color: #e1e1e1;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid #55423B;
+}
+/*验证码框宽度*/
+.cdk-box .cdk-inp2 {
+    width: 200px;
+}
+/*点击兑换图片*/
+.cdk-box .submit{
+    position: absolute;
+    left: 190px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+.cdk-yazhengma i{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius:10px ;
+    font-size: 18px;
+    background-color: green;
+    font-style: normal;
+    color: white;
+}
+.cdk-yazhengma div{
+    position:absolute ;
+    left: 425px;
+    display: none;
+    font-size: 14px;
+}
+.cdk-yazhengma .cdk-wrong i{
+    background-color: red;
+    color: white;
+}
+.cdk-yazhengma .cdk-wrong {
+    color: white;
+}
+    /*点击微信登录*/
+.cdk-weixin{
+    width: 385px;
+    height: 473px;
+    border: 1px solid #e1e1e1;
+    position: fixed;
+    left: 50%;
+    top: 160px;
+    margin-left: -192px;
+    text-align: center;
+    display: none;
+    background-color: white;
+    z-index: 10000;
+}
+.cdk-weixin span{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    float: right;
+    color: dimgrey;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cdk-weixin span:hover{
+    background-color: #E4393C;
+    color: white;
+}
+.cdk-weixin h2{
+font-weight: 600;
+    color: #9A9A9A;
+    font-size: 19px;
+    margin-top: 35px;
+}
+.cdk-weixin .erweima{
+    width: 310px;
+    height: 310px;
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+    margin-left: 37px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.cdk-weixin p{
+    line-height: 30px;
+    color: #9A9A9A;
+    font-size: 15px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+a:hover {
+    color: #B61D1D;
+}
+input,img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+}
+
+.w {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.clearfix:after{
+    content: " ";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;  /* 针对IE浏览器设置*/
+}
+
+i,s{
+
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+/*朱朱朱朱朱朱朱*/
+.denglu{
+    display: none;
+    width: 618px;
+    height: 365px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    text-align: center;
+    position: fixed;
+    top: 155px;
+    left: 365px;
+    z-index: 10001;
+}
+.denglu p{
+    display:inline-block;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #333333;
+}
+.denglu span{
+    margin-top: 23px;
+    display: block;
+    font-size: 15px;
+    color: #666666;
+    line-height: 21px;
+}
+.denglu span a{
+    color:#3481CF;
+}
+.denglu span a:hover{
+    text-decoration: underline;
+}
+.denglu ul{
+    float: right;
+    right: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+.denglu ul li{
+    float: left;
+}
+.denglu ul b{
+    border: 1px solid #BFBFBF;
+    font-size: 12px;
+    margin: 0 9px;
+}
+
+.denglu .qqewm {
+    margin: 38px auto;
+    display: inline-block;
+    width: 205px;
+    position: absolute;
+    z-index: 3;
+    left: 240px;
+}
+.denglu .qqewm img{
+    border: 1px solid #D3D3D3;
+    float: left;
+}
+.denglu .qqshouji {
+    display: none;
+    position: absolute;
+    right: 140px;
+    bottom: 40px;
+}
+.denglu .anniu{
+    width: 46px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    text-align: center;
+    line-height: 30px;
+}
+.denglu .anniu a{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.denglu .anniu:hover{
+    background-color: #E4637F;
+}
+.denglu .anniu a:hover{
+    color: white;
+    cursor: pointer;
+}
+/*定位*/
+#cdk_outbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    display: none;
+}

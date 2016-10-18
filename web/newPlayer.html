@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>御龙在天-新兵注册</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/newPlayer.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/newPlayer.js"></script>
+
+    <script>
+        $(function () {
+            //  显示logo后面的照片
+            $(".cdk-body-img").mouseenter(function () {
+                $(this).children("img").show()
+            })
+            //  隐藏logo后面的照片
+            $(".cdk-body-img").mouseleave(function () {
+                $(this).children("img").hide()
+            })
+            //  显示腾讯游戏下面的盒子
+            $(".cdk-body-youxi").mouseenter(function () {
+                $(this).children("div").show()
+            })
+            //   离开 腾讯游戏那个盒子
+            $(".cdk-body-youxi").mouseleave(function () {
+                $(this).children("div").hide()
+            })
+
+            //  腾讯游戏排行里面的 照片变大
+            $(".cdk-bom-li1").mouseenter(function () {
+                $(this).children().eq(1).children().eq(1).stop().show()
+                $(this).css("height", "82px")
+            })
+            //   腾讯游戏排行里面的 照片还原
+            $(".cdk-bom-li1").mouseleave(function () {
+                $(this).children().eq(1).children().eq(1).stop().hide()
+                $(this).css("height", "10px")
+            })
+
+        })
+    </script>
+
+</head>
+<body>
+
+<div id="w"></div>
+
+
+<!--顶部-->
+<div class="cdk-body">
+    <div class="cdk-body-l box ">
+
+        <ul>
+            <li class="cdk-body-logo">
+                <a href="###" target="_blank" title="腾讯游戏十周年">腾讯游戏十周年</a>
+            </li>
+            <li class="cdk-body-img">
+                <img src="../images/index_images/top_bigbanner.jpg" alt=""/>
+            </li>
+            <li class="cdk-body-youxi">
+                <h3 class="cdk-body-yh3">
+                    <a href="###">腾讯游戏排行</a>
+                    <i></i>
+                </h3>
+
+                <div class="cdk-youxi-box">
+                    <!--1 -->
+                    <div class="cdk-game1 ">
+                        <div class="cdk-game1-top">
+                            <h2>新游排行榜</h2>
+                            <a href="#">更多》 </a>
+                        </div>
+                        <div class="cdk-game1-bom">
+                            <ul>
+                                <li>
+                                    <span class="cdk-bom-s1">排行 游戏</span>
+                                    <!--<span>游戏</span>-->
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">1</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">刀锋铁骑</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/t7-2.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">2</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">神之浩劫</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/12.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">3</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">战争雷霆</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/13.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">4</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">冒险岛2</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/13.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">5</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">冒险者大冒险</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/15.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">6</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">王牌对决</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/16.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">7</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">全职大师</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/17.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">8</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">兽人必须死</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/18.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">9</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">欢乐坦克</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/19.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">10</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">生死狙击OL</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/110.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="cdk-game1 ">
+                        <div class="cdk-game1-top">
+                            <h2>热门排行榜</h2>
+                            <a href="#">更多》 </a>
+                        </div>
+                        <div class="cdk-game1-bom">
+                            <ul>
+                                <li>
+                                    <span class="cdk-bom-s1">排行 游戏</span>
+                                    <!--<span>游戏</span>-->
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">1</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">英雄联盟</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/21.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">2</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">地下城与勇士</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/22.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">3</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">穿越火线</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/23.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">4</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">QQ炫舞</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/24.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">5</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">FIFA Onlione3</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/25.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">6</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">逆战</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/26.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">7</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">天涯明月刀</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/27.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">8</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">QQ飞车</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/28.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">9</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">英雄之刃</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/29.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">10</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">捕鱼达人3D</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/210.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="cdk-game1">
+                        <div class="cdk-game1-top">
+                            <h2>热门手游排行榜</h2>
+                            <a href="#">更多》 </a>
+                        </div>
+                        <div class="cdk-game1-bom">
+                            <ul>
+                                <li>
+                                    <span class="cdk-bom-s1">排行 游戏</span>
+                                    <!--<span>游戏</span>-->
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">1</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">御龙在天手游</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/31.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">2</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">皇室战争</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/32.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">3</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">保卫萝卜3</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/33.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">4</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">欢乐拼三张</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/34.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">5</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">仙剑情缘</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/35.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">6</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">王者荣耀</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/36.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">7</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">穿越火线</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/37.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">8</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">天天酷跑</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/38.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">9</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">欢乐斗地主</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/39.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cdk-bom-li1">
+                                    <span class="cdk-bom-color">10</span>
+
+                                    <div class="cdk-bom-div1">
+                                        <a href="">火隐忍者</a>
+
+                                        <div class="cdk-bom-div2">
+                                            <img src="../images/game/310.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </li>
+        </ul>
+        <div class="cdk-body-"></div>
+
+
+    </div>
+</div>
+
+
+<!--导航-->
+<div class="nav-bg">
+    <div class="nav box">
+        <!--导航左部分-->
+        <div class="l-nav">
+            <ul>
+                <li><a href="../index.html" target="_blank">
+                    <h3>官方网页</h3>
+                    <span>HOME</span>
+                </a></li>
+                <li><a href="###">
+                    <h3>游戏公告</h3>
+                    <span>NEWS</span>
+                </a></li>
+                <li><a href="###">
+                    <h3>活动专区</h3>
+                    <span>ACTIVITY</span>
+                </a></li>
+                <li><a href="###">
+                    <h3>新兵注册</h3>
+                    <span>GUIDE</span>
+                </a></li>
+            </ul>
+        </div>
+        <!--导航中部分-->
+        <div class="m-nav">
+            <div class="logo">
+                <a href="###">御龙在天</a>
+            </div>
+        </div>
+        <!--导航右部分-->
+        <div class="r-nav" id="down">
+            <ul>
+                <li><a href="###">
+                    <h3>游戏视频</h3>
+                    <span>RAIDERS</span>
+                </a></li>
+                <li><a href="###">
+                    <h3>游戏图库</h3>
+                    <span>VIDEOS</span>
+                </a></li>
+                <li><a href="bbs.html" target="_blank">
+                    <h3>游戏论坛</h3>
+                    <span>BBS</span>
+                </a></li>
+                <li><a href="CDGEY.html" target="_blank">
+                    <h3>礼包兑换</h3>
+                    <span>GIFTS</span>
+                </a></li>
+            </ul>
+        </div>
+        <!--悬浮框-->
+        <div class="list">
+            <ul>
+                <li class="li1">
+                    <a href=###>下载游戏</a>
+
+                </li>
+                <li class="li2">
+                    <a href=###>领取礼包</a>
+
+                </li>
+                <li class="li3">
+                    <a href=###>御龙兵法</a>
+
+                </li>
+            </ul>
+        </div>
+        <!--下载框-->
+        <div class="download">
+            <h2>扫描二维码，下载游戏</h2>
+
+            <div class="saomiao">
+                <!--二维码-->
+                <div class="b-box">
+                    <div class="erweima">
+                        <img src="../images/newPlayer/erweima.png" alt="">
+                    </div>
+
+                </div>
+                <!--按钮-->
+                <div class="btn">
+                    <p>
+                        <a href="###">
+                            <img src="../images/newPlayer/android-down.jpg" alt="">
+                        </a>
+                    </p>
+                    <span>
+                        <a href="###"><img src="../images/newPlayer/ios-down.jpg" alt=""></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--新兵礼包-->
+<div class="cont-bg">
+    <div class="box">
+        <!--壹-->
+        <div class="yi" id="yi"></div>
+        <!--登录-->
+        <h4>您好，请先 <a href=### id="dl">[登录]</a></h4>
+
+        <!--登录页面弹出框-->
+        <div id="login">
+            <div class="lg">
+                <!--点X-->
+                <div id="closer" class="close"></div>
+                ;
+                <!--验证提示文字-->
+                <div class="words"></div>
+                ;
+                <!--按钮-->
+                <div class="anniu">
+                    <a href="###">
+                        <img src="../images/newPlayer/qq-login-btn.png" alt="">
+                    </a>
+                    <a href="###">
+                        <img src="../images/newPlayer/weixin-login-btn.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--龙-->
+        <div class="banner">
+            <img src="../images/newPlayer/dragon.png" alt="">
+        </div>
+        <!--新兵礼包-->
+        <div class="newPlayer">
+            <!--新兵礼包-->
+            <div class="p1">
+                <img src="../images/newPlayer/title1.png" alt="">
+            </div>
+            <!--等级领取-->
+            <div class="p2 clearfix" id="get">
+                <a href="###">
+                    <img class="img1" src="../images/newPlayer/register-packs-on.png" alt="">
+                </a>
+                <!--鼠标获取   显示-->
+                <div id="zc">
+                    <img class="img1" src="../images/newPlayer/register-packs.png" alt="">
+                </div>
+                <a href="###">
+                    <img class="img2" src="../images/newPlayer/30level-packs-on.png" alt="">
+                </a>
+                <!--鼠标获取   显示-->
+                <div id="lev">
+                    <img class="img2" src="../images/newPlayer/30level-packs.png" alt="">
+                </div>
+            </div>
+            <!--文字-->
+            <div class="word" id="word1">
+                <p>活动期间，新创建角色的御龙新兵</p>
+
+                <p>即可领取新手礼包，每个帐号限领一次</p>
+            </div>
+            <!--30文字-->
+            <div class="word" id="word2">
+                <p>活动期间，新创建角色的御龙新兵达到30级</p>
+
+                <p>即可领取30级助力礼包，每个帐号限领一次</p>
+            </div>
+            <!--物品-->
+            <div id="gift" class="gift">
+                <ul>
+                    <li>
+                        <img class="img1" src="../images/newPlayer/gift11.jpg" alt=""> ;
+                        <p class="p1">玄武血剂x2</p>
+                    </li>
+                    <li>
+                        <img src="../images/newPlayer/gift12.jpg" alt="">
+
+                        <p>极品绿色装备箱x2</p>
+                    </li>
+                </ul>
+            </div>
+            <!--30级物品-->
+            <div id="gift30" class="gift30">
+                <ul>
+                    <li>
+                        <img class="img1" src="../images/newPlayer/gift01.jpg" alt="">;
+                        <p>3天体验时装x1</p>
+                    </li>
+                    <li>
+                        <img class="img1" src="../images/newPlayer/gift02.jpg" alt="">;
+                        <p>一级桃子酒x2</p>
+                    </li>
+                    <li>
+                        <img class="img1" src="../images/newPlayer/gift03.jpg" alt="">;
+                        <p>金券宝箱x1</p>
+                    </li>
+                </ul>
+            </div>
+            <!--领取-->
+            <div class="get">
+                <a href="###">
+                    <img src="../images/newPlayer/get.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--御龙兵法-->
+<div class="game-bg">
+    <div class="box">
+        <!--贰-->
+        <div class="er" id="er"></div>
+        <div class="title">
+            <img src="../images/newPlayer/title2.png" alt="">
+
+            <p>七日出师，征战沙场，你准备好了吗</p>
+        </div>
+        <!--高亮-->
+        <div class="selectlist">
+            <div class="box">
+                <ul>
+                    <li id="one">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title01.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                    <li id="two">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title02.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                    <li id="three">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title03.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                    <li id="four">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title04.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                    <li id="five">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title05.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                    <li id="six">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title06.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                    <li id="seven">
+                        <a href="###">
+                            <img src="../images/newPlayer/select-title07.png" alt=""/>
+                        </a>
+
+                        <div class="li"></div>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="in">
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title01.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img01.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>新手不得不看的基础操作教程！一分钟教会你征战御龙！</p>
+            </div>
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title02.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img02.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>游戏技巧别忽略，快速提高全靠它！</p>
+            </div>
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title03.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img03.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>前期如何快速升级，让你赢在起跑线上！</p>
+            </div>
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title04.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img04.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>错过活动和副本也不怕！一键找回未完成的任务经验。</p>
+            </div>
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title05.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img05.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>多类副本玩不停，丰厚奖励等你拿！</p>
+            </div>
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title06.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img06.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>热血国战即将打响，你准备好为国奋战了吗？</p>
+            </div>
+            <div class="show ">
+                <!--兵法-->
+                <div class="one">
+                    <img src="../images/newPlayer/select-title07.png" alt="">
+                </div>
+                <!--x-->
+                <div class="off"></div>
+                <!--图片-->
+                <div class="pic1">
+                    <img src="../images/newPlayer/details-img07.jpg" alt="">
+                </div>
+                <div class="more">
+                    <a href="###">
+                        <img src="../images/newPlayer/check-more.png" alt="">
+                    </a>
+                </div>
+                <p>把钱都花在刀刃上，必看商城花钱攻略！</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--底部-->
+<div class="footer-bg">
+    <div class="footer box">
+        <div class="l-footer">
+            <div class="img">
+                <img src="../images/newPlayer/timi.jpg" alt="">
+            </div>
+            <div class="link">
+                <p>
+                    <a href="###">腾讯互动娱乐</a> |
+                    <a href="###">服务条款</a> |
+                    <a href="###">广告服务</a> |
+                    <a href="###">腾讯游戏招聘</a> |
+                    <a href="###">腾讯游戏客服</a>|
+                    <a href="###">游戏活动</a> |
+                    <a href="###">游戏地图</a> |
+                    <a href="###">商务合作</a> |
+                    <a href="###">腾讯网</a> |
+                    <a href="###">网站导航</a>
+                </p>
+
+                <p class="p1">COPYRIGHT © 1998 - 2016 TENCENT. ALL RIGHTS RESERVED.
+                    <a href="###">腾讯公司版权所有</a>
+                </p>
+
+                <p><a href="###">粤网文[2014]0633-233号</a> | <a href="###">新出网证（粤）字010号</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

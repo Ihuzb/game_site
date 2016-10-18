@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>御龙在天-游戏论坛</title>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="bbs.css"/>
+    <link rel="stylesheet" href="jquery-ui.css">
+</head>
+<script src="jquery-1.12.4.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+    $(function () {
+        $(".select-bottom>li").mouseenter(function () {
+            var idx = $(this).index();
+            var imgWidth = $(".l-m-header").width();
+            var target = -idx * imgWidth;
+            $(".select-banner").stop().animate({"left": target + "px"}, 1000);
+        })
+//       $(".m-bottom span").mouseenter(function () {
+//           $(this).css("opacity","1").parent().siblings().children("span").css("opacity","0.5");
+////           $(this).siblings("p").slideDown(1000).parent().siblings().children("p").fadeOut(1000);
+//       })
+//        $(".m-bottom span").mouseleave(function () {
+//            $(this).css("opacity","0.5");
+        // })
+
+        $(".m-bottom .box1 a").mouseenter(function () {
+            $(this).css("opacity", "0.4").parent().css("opacity", "1");
+            $(this).stop().animate({
+                "fontSize": "30px",
+                "fontWeight": "900"
+            }, 2000)
+        })
+        $(".m-bottom .box1 a").mouseleave(function () {
+            $(this).css("opacity", "1");
+            $(this).stop().animate({
+                "fontSize": "18px",
+                "fontWeight": "normal"
+            }, 2000)
+        })
+
+        $(".m-bottom .box1 p").mouseenter(function () {
+            $(this).stop().animate({
+                "fontSize": "22px",
+                "fontWeight": "900"
+            }, 1000)
+        })
+        $(".m-bottom .box1 p").mouseleave(function () {
+            $(this).stop().animate({
+                "fontSize": "14px",
+                "fontWeight": "normal"
+            }, 1000)
+        })
+        $(".header .r-header .telphone").mouseenter(function () {
+            $(this).children("img").show();
+        })
+        $(".header .r-header .telphone").mouseleave(function () {
+            $(this).children("img").hide();
+        })
+        $(".m-bottom .box1 span").mouseenter(function () {
+//            $(this).css("opacity","0.4").parent().css("opacity","1");
+            $(this).children().css({
+                "width": "190px",
+                "height": "190px",
+                "margin": "-10px"
+            })
+        })
+        $(".m-bottom .box1 span").mouseleave(function () {
+//            $(this).css("opacity","1");
+            $(this).children().css({
+                "width": "169px",
+                "height": "169px",
+                "marginTop": "1px",
+                "marginLeft": "5px",
+                "marginBottom": "5px"
+            })
+
+        })
+//        $(".b_bg").click(function () {
+//            $(this).attr("href","添加官网地址")
+//        })
+
+//        $(".r-m-header a").mouseenter(function () {
+//            $(this).siblings().show().parent().siblings().children("div").hide();
+//            $(this).siblings("div").stop().animate({
+//                "backgroundColor":"yellow"
+//            },1500).parent().siblings().children("div").css("backgroundColor","white")
+//
+//        })
+//        $(".r-m-header li").mouseleave(function () {
+//            $(this).children("div").animate({"backgroundColor":"white"},10).hide();
+//        })
+        $("#accordion").accordion();
+    })
+</script>
+<body>
+<!--最大盒子-->
+<div class="box">
+    <!--头部-->
+    <div class="header w">
+        <a href="">
+            <img src="images/logo.png" alt="" class="logo1"/>
+        </a>
+        <a href="">
+            <img src="images/header_shouyou.png" alt="" class="logo2"/>
+        </a>
+        <img src="images/header_logo_tiao.jpg" alt="" class="logo3"/>
+        <a href="">
+            <img src="images/header_title.png" alt="" class="logo4"/>
+        </a>
+
+        <div class="r-header">
+            <ul>
+                <li class="telphone">
+                    <a href="">手机版</a>
+                    <span></span>
+                    <img src="images/phone_erweima.png" alt=""/>
+
+                </li>
+                <li><a href="">设为首页</a></li>
+                <li><a href="">收藏本站</a></li>
+            </ul>
+            <p>
+                <a href="">登录
+                    <span></span>
+
+                </a>
+            </p>
+        </div>
+    </div>
+    <!--中间部分-->
+    <div class="main w">
+        <!--导航部分-->
+        <div class="nav">
+            <ul>
+                <li><a href="" class="a_bg">
+                    <img src="images/nav_1.png" alt=""/>
+                </a></li>
+                <li><a href="../index.html" target="_blank" class="b_bg">
+                    <img src="images/nav_2.png" alt=""/>
+                </a></li>
+            </ul>
+        </div>
+        <!--头部部分-->
+        <div class="m-header clearfix">
+            <div class="l-m-header">
+                <ul class="select-banner">
+                    <li><img src="images/banner1.jpg" alt=""/></li>
+                    <li><img src="images/banner2.jpg" alt=""/></li>
+                    <li><img src="images/banner3.jpg" alt=""/></li>
+                    <li><img src="images/banner4.jpg" alt=""/></li>
+                </ul>
+                <ul class="select-bottom">
+                    <li>拿新手礼包，战场见！</li>
+                    <li>不删档军饷预约</li>
+                    <li>加入公会&nbsp;分金银</li>
+                    <li>探寻藏宝图</li>
+                </ul>
+            </div>
+            <div class="r-m-header">
+                <span></span>
+                <!--<i></i>-->
+
+                <div id="accordion">
+                    <h3>[交流]</h3>
+
+                    <div>《御龙在天手游》关于IOS用户代充值申诉复议</div>
+                    <h3>[招兵]</h3>
+
+                    <div>御龙在天手游招兵买马版块-版面规定</div>
+                    <h3>[攻略]</h3>
+
+                    <div>《御龙在天手游》羽扇技能使用技巧</div>
+                    <h3>[反馈]</h3>
+
+                    <div>温馨提示:每周热点(8月12日更新)</div>
+                </div>
+                <!--<ul>-->
+                <!--<li>-->
+                <!--<a href="">-->
+                <!--<b>[交流]</b>-->
+                <!--《御龙在天手游》关于IOS用户代充值申诉-->
+                <!--</a>-->
+                <!--<div>-->
+                <!--<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议;<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议;<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议;<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议;<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议;<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议。-->
+                <!--</div>-->
+
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="">-->
+                <!--<b>[招兵]</b>-->
+                <!--御龙在天手游招兵买马版块-版面规定-->
+                <!--</a>-->
+                <!--<div>-->
+                <!--<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="">-->
+                <!--<b>[攻略]</b>-->
+                <!--《御龙在天手游》羽扇技能使用技巧-->
+                <!--</a>-->
+                <!--<div>-->
+                <!--<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="">-->
+                <!--<b>[反馈]</b>-->
+                <!--温馨提示:每周热点(8月12日更新)-->
+                <!--</a>-->
+                <!--<div>-->
+                <!--<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议<br>-->
+                <!--御龙在天手游关于IOS用户代充值申诉复议-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="">-->
+                <!--<b>[五国]</b>-->
+                <!--《御龙在天手游》有备无患！国战攻略战前准备篇-->
+                <!--</a>-->
+
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="">-->
+                <!--<b>[研发]</b>-->
+                <!--喜迎不限号开服预告（8月12-14日）-->
+                <!--</a>-->
+
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+            <div style="clear: both"></div>
+            <!--搜索框部分-->
+            <div class="input ">
+                <div class="search">
+                    <span></span>
+                    <input type="text" class="txt" placeholder="请输入搜索内容"/>
+                    <i></i>
+                </div>
+
+                <input type="button" value="搜索" class="btn"/>
+            </div>
+
+        </div>
+
+        <!--中间交流部分-->
+        <div class="m-middle">
+            <ul>
+                <li>
+                    <a href="">今日</a>
+                    <span>:694</span>
+                </li>
+                <li>
+                    <a href="">帖子</a>
+                    <span>:2630</span>
+                </li>
+                <li>
+                    <a href="">会员</a>
+                    <span>:52462</span>
+                </li>
+            </ul>
+            <p>分区版本 :</p>
+        </div>
+        <!--底部内容部分-->
+        <div class="m-bottom">
+            <div class="box1">
+               <span>
+                   <img src="images/banner001.jpg" alt=""/>
+               </span>
+                <a href="">&nbsp;综合交流区</a>
+
+                <p>
+                    建功立业的路上，和兄弟们分享你的荣耀，分担你的困难！
+                </p>
+            </div>
+            <div class="box1">
+               <span>
+                   <img src="images/banner006.jpg" alt=""/>
+               </span>
+                <a href="">&nbsp;问题反馈</a>
+
+                <p>
+                    游戏bug、诈骗邮件，盗号等问题尽情在这吐槽，客服为你解决！
+                </p>
+            </div>
+            <div class="box1">
+               <span>
+                   <img src="images/banner003.jpg" alt=""/>
+               </span>
+                <a href="">&nbsp;招兵买马</a>
+
+                <p>
+                    组建家族、招募贤才、加入豪族......扩大势力就在指尖上完成！
+                </p>
+            </div>
+            <div class="box1">
+               <span>
+                   <img src="images/banner004.jpg" alt=""/>
+               </span>
+                <a href="">&nbsp;五国纷争</a>
+
+                <p>
+                    家国矛盾、王城争霸的畅谈之地。
+                </p>
+            </div>
+            <div class="box1">
+               <span>
+                   <img src="images/banner005.jpg" alt=""/>
+               </span>
+                <a href="">&nbsp;攻略板块</a>
+
+                <p>
+                    资深玩家无私分享“兵家宝典”之地，助你揽尽精华攻略，指点江山。
+                </p>
+            </div>
+            <div class="box1">
+               <span>
+                   <img src="images/banner002.jpg" alt=""/>
+               </span>
+                <a href="">&nbsp;研发动态</a>
+
+                <p>
+                    掌握《御龙在天》升级、bug修复，开发动态等先机！
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--游戏忠告-->
+    <div class="notice ">
+        <p>
+            <span>健康游戏忠告：</span>
+            抑制不良游戏&nbsp;拒绝盗版游戏&nbsp;注意自我保护&nbsp;谨防受骗上当&nbsp;适度游戏益脑&nbsp;沉迷游戏伤身&nbsp;合理安排时间&nbsp;享受健康生活
+        </p>
+    </div>
+    <!--尾部部分-->
+    <div class="footer">
+        <div class="l-footer">
+            <a href="" target="_blank"></a></div>
+        <div class="r-footer">
+            <ul class="f-right foot-links">
+                <li><a target="_blank" href="http://ieg.tencent.com/">腾讯互动娱乐</a> <span class="foot-sprt">|</span> <a
+                        target="_blank" href="http://www.qq.com/contract.shtml">服务条款</a> <span
+                        class="foot-sprt">|</span> <a target="_blank" href="http://adver.qq.com/">广告服务</a> <span
+                        class="foot-sprt">|</span> <a target="_blank" href="http://game.qq.com/hr/">腾讯游戏招聘</a> <span
+                        class="foot-sprt">|</span> <a target="_blank" href="http://service.qq.com/">腾讯游戏客服</a> <span
+                        class="foot-sprt">|</span> <a target="_blank" href="http://tgact.qq.com/">游戏活动</a> <span
+                        class="foot-sprt">|</span> <a target="_blank" href="http://game.qq.com/gnav/">游戏地图</a> <span
+                        class="foot-sprt">|</span> <a target="_blank" href="http://game.qq.com/portal2010/business.htm">商务合作</a>
+                    <span class="foot-sprt">|</span> <a target="_blank" href="http://www.qq.com/">腾讯网</a> <span
+                            class="foot-sprt">|</span> <a target="_blank" href="http://www.qq.com/map/">网站导航</a></li>
+                <li class="f-right"><a target="_blank"
+                                       href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm">腾讯公司版权所有</a>
+                </li>
+                <li>COPYRIGHT © 1998 - 2016 TENCENT. ALL RIGHTS RESERVED.</li>
+                <li><a target="_blank" href="http://www.qq.com/culture.shtml">粤网文[2014]0633-233号</a><span
+                        class="foot-sprt"> | </span><a target="_blank" href="http://game.qq.com/culture2.htm">新出网证（粤）字010号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

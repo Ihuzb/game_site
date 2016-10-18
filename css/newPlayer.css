@@ -1,0 +1,710 @@
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family:微软雅黑;
+}
+a{
+    text-decoration:none;
+    color: #666;
+}
+input,img{
+    margin:0;
+    padding: 0;
+    border:0 none;
+    outline-style: none;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    vertical-align: bottom;
+}
+.clearfix:after {
+    content: "";
+    height:0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+.box{
+    width: 1070px;
+    margin: 0 auto;
+}
+#w{
+    width:100%;
+    height:100%;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    /*background-color: black;*/
+    display: none;
+    z-index: 7;
+}
+/*头部开始*/
+.cdk-body {
+    width: 1366px;
+    margin: 0 auto;
+    height: 40px;
+    border-bottom: 2px solid gray;
+}
+
+.cdk-body .cdk-body-l {
+}
+
+/*logo*/
+.cdk-body-logo {
+    z-index: 10;
+    height: 40px;
+    width: 220px;
+    background: url("../images/index_images/ost-bg.png") no-repeat 0 -40px;
+    text-indent: -20000px;
+    position: relative;
+    float: left;
+
+}
+
+/*logo后面的照片*/
+.cdk-body .cdk-body-l .cdk-body-img {
+    width: 230px;
+    height: 40px;
+    background: url("../images/index_images/top_banner.jpg") no-repeat;
+    float: left;
+    position: relative;
+}
+
+.cdk-body .cdk-body-l .cdk-body-img img {
+    position: absolute;
+    left: -215px;
+    top: 0px;
+    z-index: 3;
+    display: none;
+}
+
+/*游戏*/
+.cdk-body .cdk-body-l .cdk-body-youxi {
+    float: right;
+    position: relative;
+    z-index: 5;
+}
+
+.cdk-body .cdk-body-youxi .cdk-body-yh3 a {
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 14px;
+
+}
+
+.cdk-body .cdk-body-youxi .cdk-body-yh3 i {
+    height: 11px;
+    width: 11px;
+    background: url("../images/index_images/ost-bg.png") no-repeat -150px -134px;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: -15px;
+}
+
+.cdk-body .cdk-body-l .cdk-body-yh3:hover {
+    cursor: pointer;
+}
+
+.cdk-body .cdk-body-l .cdk-body-yh3:hover a {
+    color: #ff4e00;
+}
+
+.cdk-body .cdk-body-l .cdk-body-yh3:hover i {
+    background-position: -170px -134px;
+}
+
+/*游戏下面的div*/
+.cdk-body .cdk-body-youxi .cdk-youxi-box  {
+    width: 700px;
+    height: 386px;
+    border: 1px solid #666;
+    position: absolute;
+    top: 40px;
+    right: -20px;
+    z-index: 9000;
+    display: none;
+    background-color: white;
+}
+
+/*下面游戏排行隐藏的盒子*/
+.cdk-youxi-box .cdk-game1 {
+    width: 230px;
+    height: 388px;
+    /*background-color: red;*/
+    float: left;
+}
+.cdk-youxi-box .cdk-game1 .cdk-game1-top {
+    height: 17px;
+    border-bottom: 1px solid #666666;
+    margin: 20px 10px 0px;
+
+}
+.cdk-youxi-box .cdk-game1 .cdk-game1-top h2 {
+    float: left;
+}
+.cdk-youxi-box .cdk-game1 .cdk-game1-top a {
+    float: right;
+}
+.cdk-game1 .cdk-game1-bom {
+    padding-left: 10px;
+}
+.cdk-bom-li1 {
+    width: 210px;
+    height: 10px;
+    /*position: relative;*/
+    margin-bottom: 15px;
+}
+.cdk-game1 .cdk-game1-bom .cdk-bom-s1 {
+    height: 30px;
+    line-height: 30px;
+}
+.cdk-game1 .cdk-game1-bom .cdk-bom-color {
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ff4e00;
+    background-color: #ff4e00;
+    float: left;
+    position: absolute;
+    z-index: 100;
+
+}
+.cdk-game1 .cdk-game1-bom .cdk-bom-div1 {
+    float: left;
+    padding-left: 30px;
+    position: relative;
+
+}
+.cdk-game1-bom .cdk-bom-div1 .cdk-bom-div2 {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    border: 1px solid #CCCCCC;
+    display: none;
+
+    /*display: none;*/
+    /*position: relative;*/
+    /*width: 194px;*/
+    /*height: 82px;*/
+    /*margin-left: 4px;*/
+    /*overflow: hidden;*/
+    /*padding: 1px;*/
+    /*border: 1px solid #ccc;*/
+    /*background: #fff;*/
+}
+
+/*导航*/
+.nav-bg{
+    height: 727px;
+    /*width: 100%;*/
+    /*background-color: red;*/
+    background: url("../images/newPlayer/bg_conpart1.jpg")no-repeat;
+}
+.nav-bg .nav{
+    height:58px;
+    /*background-color: red;*/
+    padding-top: 42px;
+    position: relative;
+}
+/*导航左部*/
+.nav-bg .nav .l-nav{
+    float: left;
+    margin-left: 45px;
+}
+.nav .l-nav li{
+    float: left;
+    margin-right: 54px;
+
+}
+.nav  a{
+    display: inline-block;
+    text-align: center;
+}
+.nav  a h3{
+    height: 25px;
+    color: #F8CC6E;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav  a span{
+    font-size: 9px;
+    color: #AAAAAA;
+}
+.nav  a h3:hover{
+    color: #d9a66a;
+}
+
+
+/*导航中部分*/
+.nav-bg .nav .m-nav{
+    position: relative;
+    float: left;
+}
+.nav .m-nav .logo a{
+    text-indent: -20000px;
+    display: inline-block;
+    width: 131px;
+    height: 93px;
+    background: url("../images/logo.png")no-repeat;
+    position: absolute;
+    left: -10px;
+    top:-40px;
+}
+
+/*导航右部分*/
+.nav-bg .nav .r-nav{
+    float: right;
+    margin-right: 25px;
+}
+.nav-bg .nav .r-nav li{
+    float: left;
+    margin-left: 53px;
+}
+/*悬浮框*/
+.nav .list{
+    position: fixed;
+    width: 138px;
+    height: 175px;
+    border: 1px solid #976329;
+    right: -90px;
+    top: 190px;
+    z-index: 6;
+}
+.nav .list li{
+    height: 57px;
+    width: 138px;
+
+}
+.nav .list li a{
+    height: 36px;
+    width: 88px;
+    display: block;
+    padding-top: 21px;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+.nav .list .li1{
+    border-bottom: 1px solid #976329;
+    background: url("../images/newPlayer/sidebar-1-bg-on.png")no-repeat;
+ }
+.nav .list .li2{
+    border-bottom: 1px solid #976329;
+    border-top: 1px solid #976329;
+    background: url("../images/newPlayer/sidebar-2-bg.png")no-repeat;
+}
+.nav .list .li3{
+    border-top: 1px solid #976329;
+    background: url("../images/newPlayer/sidebar-3-bg.png")no-repeat -4px 0;
+}
+/*下载框*/
+.nav .download{
+    position: absolute;
+    width: 395px;
+    height: 189px;
+    /*background-color: #fff;*/
+    bottom: -580px;
+    left: 52px;
+}
+.nav .download h2{
+    color: #C7C7C7;
+    font-size: 18px;
+    font-weight: 100;
+    height:46px;
+}
+.nav .download .saomiao{
+    height: 143px;
+    /*background-color: pink;*/
+}
+/*二维码*/
+.nav .download .b-box{
+    height: 143px;
+    width: 145px;
+    /*background-color: pink;*/
+    float: left;
+}
+.download .b-box .erweima{
+    border: 4px solid #976627;
+    padding: 7px;
+}
+/*按钮*/
+.nav .download .saomiao .btn{
+    float: right;
+    height: 143px;
+    width:230px;
+    /*background-color: red;*/
+}
+.download .saomiao .btn p{
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+
+
+
+/*新兵礼包*/
+
+.cont-bg{
+    height: 597px;
+    background: url("../images/newPlayer/bg_conpart2.jpg")no-repeat;
+
+}
+.cont-bg .box{
+    position: relative;
+    /*overflow: hidden;*/
+    border-top: 1px solid black;
+}
+.cont-bg .box .yi{
+    width: 96px;
+    height: 96px;
+    background: url("../images/newPlayer/sign-one.png") no-repeat;
+    position: absolute;
+    top:-48px;
+    left: 490px;
+}
+
+/*登录*/
+.cont-bg .box h4{
+    font-size: 15px;
+    margin-top: 24px;
+    margin-left: 52px;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 20px;
+
+}
+.cont-bg .box h4 a{
+    color: #D49A4E;
+}
+/*登录验证弹出框*/
+ #login{
+    width: 543px;
+    height: 288px;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top:150px;
+    margin-left: -250px;
+    display: none;
+     background: url("../images/newPlayer/login-popup-bg.jpg") no-repeat;
+
+}
+#login .lg{
+    position: relative;
+}
+/*点X*/
+#login .lg .close{
+    width:26px;
+    height: 26px;
+    background: url("../images/newPlayer/login-close.png") no-repeat;
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+/*验证提示文字*/
+#login .lg .words{
+    width: 310px;
+    height: 28px;
+    background: url("../images/newPlayer/login-title.png") no-repeat;
+    position: absolute;
+    left:50%;
+    margin-left: -155px;
+    top:80px;
+}
+/*按钮*/
+#login .lg .anniu{
+    position: absolute;
+    bottom: -220px;
+    left: 40px;
+}
+#login .lg .anniu img{
+    margin-right: 20px;
+}
+/*龙*/
+.cont-bg .box .banner{
+    position: absolute;
+    top:-329px;
+    right: -170px;
+}
+/*新兵礼包*/
+.cont-bg .box .newPlayer{
+    width: 490px;
+    height: 490px;
+    /*background-color: #fff;*/
+    text-align: center;
+    position: relative;
+    left: 62px;
+}
+/*等级领取*/
+.newPlayer .p2 img{
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.newPlayer  .img1{
+    margin-right: 20px;
+}
+.newPlayer #zc{
+    position: absolute;
+    display: none;
+}
+.newPlayer #lev{
+    position: absolute;
+    display: none;
+    left: 254px;
+}
+/*文字*/
+.newPlayer .word{
+    
+}
+.newPlayer .word p{
+    font-size: 17px;
+    height: 32px;
+    color: #DEA040;
+}
+.newPlayer #word1{
+    display: block;
+    position: relative;
+}
+.newPlayer #word2{
+    position: absolute;
+    /*top:192px;*/
+    /*left:82px;*/
+    display: none;
+}
+
+/*物品*/
+.newPlayer .gift{
+    margin-top: 20px;
+    padding-left: 117px;
+    display: block;
+}
+.newPlayer .gift li{
+    float: left;
+
+}
+.newPlayer .gift p{
+    color: #d9a66a;
+    margin-top: 5px;
+}
+.newPlayer .gift .p1{
+    margin-left: -25px;
+}
+
+/*30级物品*/
+.newPlayer .gift30{
+    margin-top: 20px;
+    position: absolute;
+    left: 60px;
+    top:256px;
+
+    display: none;
+}
+.newPlayer .gift30 li{
+    float: left;
+    margin-right: 5px;
+}
+.newPlayer .gift30 p{
+    color: #d9a66a;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+/*领取*/
+.newPlayer .get{
+    position: absolute;
+    left: 50%;
+    margin-left: -138px;
+    bottom: -15px;
+}
+
+
+
+/*御龙兵法*/
+.game-bg{
+    height:655px;
+    /*background-color: #0B090A;*/
+    background: url("../images/newPlayer/bg_conpart3.jpg") no-repeat;
+    position: relative;
+    z-index: 2;
+
+}
+.game-bg .box{
+    position: relative;
+}
+.game-bg .box .er{
+    width: 96px;
+    height: 96px;
+    background: url("../images/newPlayer/sign-two.png") no-repeat;
+    position: absolute;
+    top:-48px;
+    left: 495px;
+}
+
+.game-bg .box .title{
+    position: absolute;
+    left:50%;
+    margin-left: -154px;
+    top:68px;
+    /*width: 195px;*/
+    text-align: center;
+}
+.game-bg .box .title p{
+    margin-top: 15px;
+    color: #EBD397;
+    font-size: 20px;
+}
+/*高亮*/
+.game-bg .box .selectlist{
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    padding-left: 1px;
+    /*background: url("../images/newPlayer/li_bg.png");*/
+    width: 994px;
+    /*display: none;*/
+}
+.game-bg .box .selectlist li{
+    position: relative;
+    float: left;
+    /*margin-right: 1px;*/
+    width: 141px;
+    height: 441px;
+    background: url("../images/newPlayer/select-bg-on.png") no-repeat;
+    /*opacity: 0.7;*/
+}
+.game-bg .box .selectlist .li{
+    width: 141px;
+    height: 441px;
+    position: absolute;
+    top:0px;
+    opacity: 1;
+    /*background-color: black;*/
+    background: url("../images/newPlayer/select-bg.png") no-repeat;
+}
+.game-bg .box .selectlist li a{
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    width: 36px;
+    height: 238px;
+    margin-top: 90px;
+    margin-left: 37px;
+}
+/*每个弹出框*/
+
+.game-bg .show{
+    width:995px;
+    height: 441px;
+    /*background-color:black;*/
+    position: absolute;
+    top:180px;
+    left:60px;
+    display: none;
+    z-index: 6;
+}
+/*x*/
+.game-bg .show .off{
+    width: 39px;
+    height: 38px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    background: url("../images/newPlayer/close.png") no-repeat;
+    cursor: pointer;
+}
+.game-bg .show .c1{
+    display: block;
+}
+
+/*兵法*/
+.game-bg .show .one{
+    margin-top: 75px;
+    margin-left: 20px;
+}
+.game-bg .show .pic1{
+    position: absolute;
+    top:40px;
+    left:180px;
+}
+.game-bg .show .more{
+    position: absolute;
+    top:40px;
+    right:200px;
+}
+
+.game-bg .show p{
+    position: absolute;
+    bottom: 60px;
+    left:180px;
+    color: #976329;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+.footer-bg{
+    height: 144px;
+    background-color: #000000;
+    position: relative;
+    z-index:2;
+}
+
+.footer-bg .footer{
+    padding-top: 55px;
+    /*background-color: #fff;*/
+    /*text-align: center;*/
+}
+.footer .l-footer .img{
+    float: left;
+}
+.footer .l-footer .link{
+    float: left;
+    margin-left: -50px;
+    /*padding-top: 10px;*/
+}
+.footer .l-footer .link p{
+    color: #4A4A4A;
+    height:28px;
+    font-size: 12px;
+}
+.footer .l-footer .link .p1{
+    padding-left: 5px;
+}
+.l-footer .link .p1 a{
+    float: right;
+}
+.l-footer .link p a{
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

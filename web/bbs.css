@@ -1,0 +1,452 @@
+div, p, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd {
+    font-family: 宋体;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333333;
+    text-decoration: none;
+}
+
+a {
+    marign: 0;
+    padding: 0;
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B61D1D;
+}
+
+input, img {
+    outline-style: none;
+    marign: 0;
+    padding: 0;
+    border: 0;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%;
+    min-width: 1000px;
+    _width: 1000px;
+    height: 1500px;
+}
+
+.box {
+    background: #faf5f1 url("images/big_bg.jpg") center top no-repeat;
+}
+
+.header {
+    height: 156px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+}
+
+.header img {
+    float: left;
+    display: block;
+}
+
+.header .logo1 {
+    margin: 20px 18px 0 0;
+}
+
+.header .logo2 {
+    margin: 32px 18px 0 0;
+}
+
+.header .logo3 {
+    margin-top: 34px;
+}
+
+.header .logo4 {
+    margin: 35px 0 0 24px;
+}
+
+.header .r-header {
+    width: 208px;
+    float: right;
+    height: 74px;
+    /*background-color: red;*/
+    margin-top: 20px;
+
+}
+
+.header .r-header li {
+    float: left;
+    margin-left: 18px;
+    position: relative;
+
+}
+
+.header .r-header li a {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.header .r-header li span {
+
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    background: url(images/phone_icon.png) no-repeat;
+    left: -15px;
+    top: 0px;
+}
+
+/*二维码*/
+.header .r-header li img {
+    position: absolute;
+    top: -17px;
+    left: -165px;
+    display: none;
+}
+
+.header .r-header p a {
+    width: 102px;
+    height: 31px;
+    background: #2E2F2A;
+    border-radius: 10px;
+    float: right;
+    line-height: 31px;
+    text-align: center;
+    color: #F8CC6E;
+    margin-right: 0;
+    margin-top: 27px;
+    position: relative;
+    font-size: 14px;
+}
+
+.header .r-header p span {
+    width: 16px;
+    height: 16px;
+    background: url(images/login_icon.png);
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 9px;
+}
+
+/*中间部分*/
+.main {
+    /*background-color: pink;*/
+    background-color: white;
+    height: 1100px;
+}
+
+.main .nav {
+    height: 46px;
+    background: url(images/nav_top_bg.jpg);
+}
+
+.main .nav ul {
+    /*margin-left: 34px;*/
+}
+
+.main .nav li {
+    float: left;
+    line-height: 46px;
+
+}
+
+.main .nav li a {
+    width: 142px;
+    height: 46px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-align: center;
+
+}
+
+.main .nav li img {
+    margin-top: 5px;
+    margin-top: 13px;
+}
+
+.main .nav .a_bg {
+    background: url(images/nav_hover.jpg);
+}
+
+/*中间部分头部*/
+.main .m-header {
+    background: url(images/header_bg.png) no-repeat right bottom;
+}
+
+.main .m-header .l-m-header {
+    width: 700px;
+    height: 313px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main .m-header .l-m-header ul {
+    width: 2800px;
+    position: absolute;
+
+}
+
+.main .m-header .l-m-header li {
+    float: left;
+}
+
+.main .m-header .l-m-header .select-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 43px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.l-m-header .select-bottom li {
+    width: 25%;
+    text-align: center;
+    line-height: 43px;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    background: url(images/tiao_bg3.png) right center no-repeat;
+}
+
+.main .m-header .l-m-header li {
+    float: left;
+}
+
+.main .m-header .r-m-header {
+    width: 367px;
+    height: 313px;
+    float: right;
+    padding-left: 33px;
+}
+
+.main .m-header .r-m-header li {
+    width: 367px;
+    margin-bottom: 10px;
+}
+
+.main .m-header .r-m-header > span {
+    margin-top: 28px;
+    margin-bottom: 17px;
+    height: 21px;
+    display: block;
+    background: url(images/top_posts.png) no-repeat;
+}
+
+/*.main .m-header .r-m-header li{*/
+/*height: 38px;*/
+/*line-height: 38px;*/
+/*border-top:1px solid #E2DBD1;*/
+/*}*/
+
+/*搜索框开始*/
+.main .input {
+    height: 44px;
+    width: 1100px;
+    border-top: 1px solid #e4e3e3;
+    border-bottom: 1px solid #e4e3e3;
+    display: block;
+    padding-top: 12px;
+
+}
+
+.main .input .search {
+    height: 30px;
+    margin-left: 32px;
+    margin-right: 9px;
+    width: 380px;
+    border: 1px solid #C18B05;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+
+}
+
+.input .search span {
+    width: 19px;
+    height: 19px;
+    display: block;
+    background: url(images/search_btn.png) no-repeat;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+.input .search .txt {
+    line-height: 30px;
+    margin-left: 32px;
+}
+
+.input .search i {
+    width: 11px;
+    height: 7px;
+    display: block;
+    background: url(images/search_icon1.png) no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+
+.main .input .btn {
+    width: 73px;
+    height: 32px;
+    background: #9B0B0B;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    float: left;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 14px;
+}
+
+/*中间交流部分*/
+.m-middle {
+    height: 60px;
+    /*background-color: pink;*/
+}
+
+.m-middle ul {
+    line-height: 60px;
+    padding-left: 10px;
+}
+
+.m-middle li {
+    float: left;
+    padding-right: 12px;
+    padding-left: 10px;
+    background: url(images/tiao_bg4.png) no-repeat right center;
+
+}
+
+.m-middle p {
+    float: right;
+    width: 316px;
+    line-height: 60px;
+}
+
+/*底部内容部分*/
+.m-bottom {
+    padding-left: 30px;
+}
+
+.m-bottom .box1 {
+    width: 516px;
+    height: 180px;
+    background-color: white;
+
+    padding-top: 12px;
+    float: left;
+    margin-right: 10px;
+    /*margin-left: 30px;*/
+    margin-bottom: 10px;
+}
+
+.m-bottom .box1 span {
+    width: 169px;
+    height: 169px;
+    display: block;
+    line-height: 169px;
+    margin-left: 13px;
+    float: left;
+
+}
+
+.m-bottom .box1 a {
+    line-height: 40px;
+    font-size: 20px;
+    color: #c08a0f;
+    margin-left: 26px;
+    background: url(images/tiao_bottom_bg.jpg) left center no-repeat;
+    font-weight: 700;
+
+}
+
+.m-bottom .box1 p {
+    margin-left: 26px;
+    width: 280px;
+    height: 44px;
+    float: right;
+    margin-right: 28px;
+    line-height: 25px;
+    margin-top: 20px;
+    display: block;
+    /*color: goldenrod;*/
+    font-size: 16px;
+}
+
+/*游戏忠告*/
+.notice {
+    line-height: 50px;
+    height: 50px;
+    background: #685C4A;
+    text-align: center;
+    margin-top: 54px;
+}
+
+.notice span {
+    color: #EBE9E7;
+    font-weight: 700;
+}
+
+.notice p {
+    color: #B29A75;
+}
+
+.footer {
+    height: 130px;
+    background-color: #000000;
+    position: relative;
+}
+
+.footer .l-footer {
+    width: 280px;
+    height: 85px;
+    background: url(images/timi.jpg) no-repeat 60px 35px;
+
+}
+
+.footer .r-footer {
+    float: right;
+    position: absolute;
+    right: 130px;
+    top: 30px;
+}
+
+.footer .r-footer a {
+    color: gray;
+}
+
+.footer .r-footer li {
+    color: gray;
+}
+
+.select-bottom li:hover {
+    color: goldenrod;
+}
+
+.footer .r-footer a:hover {
+    color: goldenrod;
+}

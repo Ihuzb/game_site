@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+
+body{
+    position: relative;
+}
+body .music{
+    position: absolute;
+    left: -9999px;
+}
+.box{
+    width: 1000px;
+    margin: 0 auto;
+}
+/*头部白色栏*/
+.top_white{
+    background-color: #FFFFFF;
+    border-top: 1px solid #C9C9C9;
+    border-bottom: 1px solid #C9C9C9;
+    position: relative;
+}
+.top_white .box .txul li{
+    height: 40px;
+    display: inline-block;
+    float: left;
+}
+.top_white .box .txul li a{
+    display: inline-block;
+    height: 40px;
+}
+.top_white .box .txul .txli1 a{
+    display: inline-block;
+    height: 40px;
+    width: 220px;
+    background: url("../images/index_images/ost-bg.png") no-repeat left;
+    background-position: 0 -40px;
+    position: absolute;
+    z-index: 10;
+}
+.top_white .box .txul .txli2{
+    width: 230px;
+    background: url("../images/index_images/top_banner.jpg") no-repeat;
+    margin-left: 220px;
+}
+.top_white .box .txul .txli2 img{
+    display: none;
+    position: absolute;
+    left: 180px;
+    z-index: 5;
+}
+.top_white .box .txul .txli3 {
+    width: 108px;
+    float: right;
+    margin-right: 18px;
+    position: relative;
+    z-index: 10;
+}
+.top_white .box .txul .txli3 h3{
+    font-weight: 100;
+    line-height: 40px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.top_white .box .txul .txli3 .xl{
+    width: 11px;
+    height: 11px;
+    background: url("../images/index_images/ost-bg.png") no-repeat left;
+    background-position: -150px -134px;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: -11px;
+}
+
+/*排行榜*/
+.top_white .box .txul .txli3 .ranking_list{
+    /*display: none;*/
+    width: 700px;
+    height: 400px;
+    border: 1px solid #666;
+    position: absolute;
+    top: 40px;
+    right: -20px;
+    z-index: 9000;
+    display: none;
+    background-color: white;
+}
+.top_white .box .txul .txli3 .ranking_list .rank_game{
+    width: 230px;
+    height: 388px;
+    float: left;
+}
+.top_white .box .txul .txli3 .ranking_list .rank_game .rank_game_top{
+    height: 17px;
+    border-bottom: 1px solid #666666;
+    margin: 20px 10px 0px;
+}
+.top_white .box .txul .txli3 .ranking_list .rank_game_top h2 {
+    float: left;
+}
+.top_white .box .txul .txli3 .ranking_list .rank_game_top a {
+    float: right;
+}
+.top_white .box .txul .txli3 .ranking_list .rank_game_top a:hover{
+    color: #ff4e00;
+}
+.top_white .box .txul .txli3 .rank_game_bom{
+    padding-left: 10px;
+}
+.top_white .box .txul .txli3 .rank_bom_li1{
+    width: 210px;
+    height: 10px;
+    /*position: relative;*/
+    margin-bottom: 15px;
+}
+.top_white .box .txul .txli3 .rank_bom_s1 {
+    height: 30px;
+    line-height: 30px;
+}
+.top_white .box .txul .txli3 .rank_bom_color {
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ff4e00;
+    background-color: #ff4e00;
+    float: left;
+    position: absolute;
+    z-index: 100;
+
+}
+.top_white .box .txul .txli3 .rank_bom_div1 {
+    float: left;
+    padding-left: 30px;
+    position: relative;
+
+}
+.top_white .box .txul .txli3 .rank_bom_div2 {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    border: 1px solid #CCCCCC;
+    display: none;
+}
+
+/*官网首页头部*/
+.top {
+    height:873px ;
+    width: 100%;
+    background: url("../images/index_images/top_bg.jpg") no-repeat center;
+    position: absolute;
+    z-index:1;
+}
+.top .box{
+    height:873px ;
+    background: url("../images/index_images/top_main0809.jpg") no-repeat center;
+    position: relative;
+}
+/*头部列表*/
+.top .box .list{
+    padding-top: 42px;
+}
+.top .box .list li{
+    /*margin-top: 42px;*/
+    width: 56px;
+    height: 39px;
+    display:inline-block;
+    float: left;
+    margin-right: 56px;
+    text-align: center;
+}
+.top .box .list .li4{
+    margin-right: 215px;
+}
+.top .box .list .li8{
+    margin-right: 0px;
+}
+.top .box .list li a{
+    color: #F8CC6E;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 微软雅黑;
+    display:inline-block;
+}
+.top .box .list li a:hover{
+    color: orange;
+}
+.top .box .list li span{
+    font-size: 9px;
+    font-family: 微软雅黑;
+    color: #BFBFBE;
+    line-height: 1.5;
+    display:inline-block;
+}
+.top .box .LOGO{
+    display: inline;
+    height: 108px;
+    width: 140px;
+    position: absolute;
+    top: 0px;
+    left: 436px;
+}
+/*视频播放*/
+.top .box .media{
+    height: 92px;
+    width: 92px;
+    position: absolute;
+    top: 277px;
+    left: 468px;
+}
+.top .box .media .dj{
+    cursor: pointer;
+    display: inline-block;
+    height: 92px;
+    width: 92px;
+}
+.top .box .media  .bf{
+    display: none;
+    position: absolute;
+    top: -110px;
+    left: -240px;
+}
+.top .box .media  .bf span{
+    background: url("../images/index_images/ost-bg.png") no-repeat left;
+    background-position: -105px -196px;
+    cursor: pointer;
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*二维码*/
+.top .box .erweima{
+    width: 300px;
+    height: 408px;
+    margin-top: 473px;
+    background: url("../images/index_images/erweima.png") no-repeat ;
+    position: absolute;
+    bottom: 0;
+    float: left;
+}
+.top .box .erweima .ewm-list{
+    padding-top: 347px;
+}
+.top .box .erweima .ewm-list li{
+    float: left;
+    border-right: 1px solid ;
+}
+.top .box .erweima .ewm-list li a{
+    display: inline-block;
+    width: 149px;
+    height: 60px;
+
+}
+/*s首页导航轮播图*/
+.top .box .dhlb{
+    width: 700px;
+    height: 313px;
+    margin-top:473px ;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.top .box .dhlb .photo{
+    /*width: 700px;*/
+    height: 313px;
+    width: 1000%;
+    position: absolute;
+}
+.top .box .dhlb .photo li{
+    display: inline-block;
+    float: left;
+}
+.top .box .dhlb .lblist{
+    background-color: black;
+    position: absolute;
+    z-index: 5;
+    bottom: 0px;
+    opacity: 0.8;
+}
+.top .box .dhlb .lblist li{
+    height: 46px;
+    line-height: 46px;
+    float: left;
+    color: white;
+    display: inline-block;
+    width: 140px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.top .box .dhlb .lblist .on{
+    color: #B55B05;
+    cursor: pointer;
+}
+.top .box .dhlb .list_span{
+    position: absolute;
+    bottom: 10px;
+}
+.top .box .dhlb .list_span span{
+    display: inline-block;
+    height: 18px;
+    width: 140px;
+    float: left;
+    text-align: right;
+}
+/*游戏资讯*/
+.new_game{
+    height: 482px;
+    margin-top: 873px;
+    background: url("../images/index_images/yd_news.jpg") no-repeat;
+}
+.new_game .box{
+    margin-top: 34px;
+}
+/*新手指导*/
+.new_game .new_left{
+    width: 298px;
+    position: relative;
+}
+.new_game .new_left .guide{
+    height: 22px;
+    width: 107px;
+    background: url("../images/index_images/jlt.png") no-repeat;
+    background-position: -300px -3px;
+    position: absolute;
+    top: 34px;
+}
+.new_game .new_left .menu{
+    width: 298px;
+    height: 343px;
+    background: url("../images/index_images/jlt.png") no-repeat;
+    background-position: -300px -65px;
+    position: absolute;
+    top: 70px;
+}
+.new_game .new_left .menu ul {
+    position: absolute;
+    top: 111px;
+}
+.new_game .new_left .menu ul li{
+    width: 148px;
+    height: 78px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.new_game .new_left .menu ul li a{
+    padding-top: 20px;
+    padding-left: 29px;
+    font-size: 12px;
+    width: 120px;
+    height: 58px;
+    display: inline-block;
+    text-align: center;
+}
+.new_game .new_left .menu ul li a span{
+    float: left;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 34px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #dcc490;
+
+}
+.new_game .new_left .menu ul li i {
+    display: inline-block;
+    height: 32px;
+    width: 29px;
+    background: url("../images/index_images/jlt.png") no-repeat ;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+/*活动中心*/
+.new_game .new_right{
+    position: relative;
+    margin-top: 34px;
+    margin-left: 320px;
+}
+.new_game .new_right .activity{
+    background-color: white;
+    width: 680px;
+    height: 343px;
+    position: absolute;
+    top: 70px;
+}
+.new_game .new_right .guide{
+    height: 22px;
+    width: 107px;
+    background: url("../images/index_images/jlt.png") no-repeat;
+    background-position: -300px -34px;
+    position: absolute;
+    top: 34px;
+}
+/*Tab栏*/
+.new_game .new_right .Tab_new{
+    height: 56px;
+    width: 680px;
+}
+.new_game .new_right .Tab_new ul .tn_li{
+    height: 54px;
+    width: 136px;
+    float: left;
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: 700;
+    color:white;
+    line-height: 54px;
+    border-top: 2px solid #DCBD53;
+    cursor: pointer;
+    background-color: #AD8D43;
+}
+.new_game .new_right .Tab_new ul .on{
+    color: black;
+    background-color: white;
+    font-weight: 700;
+}
+.new_game .new_right .Tab_new .tn_a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 67px;
+    right: 32px;
+    background: url("../images/index_images/jlt.png") no-repeat;
+    background-position: -721px 0;
+}
+/*新闻栏*/
+.new_game .new_right .Tab_new_Blist{
+    height: 276px;
+    width: 618px;
+    padding: 0 31px;
+    margin-top: 11px;
+    border-bottom: 2px solid #CDCAC1 ;
+}
+.new_game .new_right .Tab_new_list{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+.new_game .new_right .Tab_new_gl{
+    display: block;
+    opacity: 1;
+    z-index: 3;
+}
+.new_game .new_right .Tab_new_list ul .li_one{
+    height: 50px;
+    width: 565px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #FF0000;
+    font-weight: 700;
+    font-family: 微软雅黑, Tahoma, 宋体;
+    text-align: center;
+    background-color: #EAEAE8;
+    margin-bottom: 11px;
+    border-bottom: none;
+}
+.new_game .new_right .Tab_new_list ul li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    border-bottom: 1px solid #E6E4DF;
+}
+.new_game .new_right .Tab_new_list ul li .Tnl_a{
+    float: left;
+    line-height: 32px;
+    color: #333333;
+    font-family: 微软雅黑,Tahoma,宋体;
+}
+.new_game .new_right .Tab_new_list ul li .Tnl_a .type{
+    font-weight: 700;
+    margin-right: 9px;
+}
+.new_game .new_right .Tab_new_list ul li .fr{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
